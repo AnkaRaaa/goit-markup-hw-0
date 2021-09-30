@@ -55,3 +55,28 @@ a {
 li {
   list-style-type: none;
 }
+@mixin text-value($fs, $fw, $lh) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+}
+@keyframes puls {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
